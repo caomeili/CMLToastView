@@ -10,7 +10,7 @@ CMLToastView is available through [cocoaoods](git@192.168.250.71:ios/cocoapods.g
 it, simply add the following line to your Podfile:
 
 ```ruby
-source 'git@192.168.250.71:ios/cocoapods.git'
+source 'git@github.com:caomeili/CMLrepos.git'
 // 引入framework  默认为framework 
 pod "CMLToastView" 或 pod 'CMLToastView/CoreFramework'
 // 引入源代码
