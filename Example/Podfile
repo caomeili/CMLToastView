@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CMLToastView_Example' do
+  pod 'CMLToastView', :path => '../'
+
+  target 'CMLToastView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
