@@ -65,5 +65,5 @@ import "FLLoadingView.h"
 
 
 
-[详细使用方法说明](http://192.168.5.230/doc/rules/2017/06/21/Toast-使用说明/)
+[详细使用方法说明](https://caomeili.github.io/2017/06/21/Toast-使用说明/)
 
