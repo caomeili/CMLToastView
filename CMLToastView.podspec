@@ -20,7 +20,7 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'CoreFramework' do |ss|
-    ss.ios.vendored_frameworks = 'CMLToastView-1.0.0/ios/ToastView.framework'
+    ss.ios.vendored_frameworks = 'CMLToastView-1.0.0/ios/CMLToastView.framework'
   end
   s.resource_bundles = {
     'CMLToastView' => ['CMLToastView/Assets/**/*.png']
