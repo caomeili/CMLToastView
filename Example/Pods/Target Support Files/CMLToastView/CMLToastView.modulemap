@@ -1,0 +1,6 @@
+framework module CMLToastView {
+  umbrella header "CMLToastView-umbrella.h"
+
+  export *
+  module * { export * }
+}

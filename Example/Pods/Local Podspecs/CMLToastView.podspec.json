@@ -1,0 +1,36 @@
+{
+  "name": "CMLToastView",
+  "version": "1.0.0",
+  "summary": "A short description of CMLToastView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/caomeili/CMLToastView",
+  "authors": {
+    "caomeili": "caoml@ushareit.com"
+  },
+  "source": {
+    "git": "git@github.com:caomeili/ToastView.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "default_subspecs": "Core",
+  "resource_bundles": {
+    "CMLToastView": [
+      "CMLToastView/Assets/**/*.png"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "CMLToastView/Classes/**/*",
+      "public_header_files": "CMLToastView/Classes/**/*.h"
+    },
+    {
+      "name": "CoreFramework",
+      "ios": {
+        "vendored_frameworks": "ToastView-1.0.2/ios/ToastView.framework"
+      }
+    }
+  ]
+}

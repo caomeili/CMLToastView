@@ -7,12 +7,15 @@
 //
 
 #import "CMLAppDelegate.h"
-
+#import <CMLToastView/ToastSupport.h>
+#import "FLLoadingView.h"
 @implementation CMLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[ToastSupportFactory sharedInstance] setCustomViewWithClassName:[FLLoadingView class]];
+
     return YES;
 }
 

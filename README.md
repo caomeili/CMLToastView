@@ -1,29 +1,69 @@
 # CMLToastView
 
-[![CI Status](http://img.shields.io/travis/caomeili/CMLToastView.svg?style=flat)](https://travis-ci.org/caomeili/CMLToastView)
-[![Version](https://img.shields.io/cocoapods/v/CMLToastView.svg?style=flat)](http://cocoapods.org/pods/CMLToastView)
-[![License](https://img.shields.io/cocoapods/l/CMLToastView.svg?style=flat)](http://cocoapods.org/pods/CMLToastView)
-[![Platform](https://img.shields.io/cocoapods/p/CMLToastView.svg?style=flat)](http://cocoapods.org/pods/CMLToastView)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
-CMLToastView is available through [CocoaPods](http://cocoapods.org). To install
+CMLToastView is available through [cocoaoods](git@192.168.250.71:ios/cocoapods.git). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CMLToastView"
+source 'git@192.168.250.71:ios/cocoapods.git'
+// 引入framework  默认为framework 
+pod "CMLToastView" 或 pod 'CMLToastView/CoreFramework'
+// 引入源代码
+pod 'CMLToastView/Core'
 ```
 
 ## Author
 
 caomeili, caoml@ushareit.com
 
-## License
+## Directions for use
 
-CMLToastView is available under the MIT license. See the LICENSE file for more info.
+#### 使用方法
+
+1. 基本使用
+
+
+```
+E.g:
+import <CMLToastView/ToastSupport.h>
+第一种使用：
+...
+@property (nonatomic, strong) ToastSupport *toast;
+...
+self.toast = [[ToastSupportFactory sharedInstance] createLoading];
+[self.toast show];
+第二种使用：
+[[[ToastSupportFactory sharedInstance] createLoading] showInTime:2.0];
+第三种使用：
+[[[ToastSupportFactory sharedInstance] createLoading] showWithDuration:   TOAST_DURATION_SHORT];
+```
+
+2. 自定义CMLToastView
+
+```   
+E.g:
+import <CMLToastView/ToastSupport.h>
+...
+UIView *aView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 100)];
+aView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
+[[[ToastSupportFactory sharedInstance] createLoadingWithCustomView:aView] showInTime:3.0];
+```
+3. 统一替换CMLToastView
+
+```
+E.g:
+import <CMLToastView/ToastSupport.h>
+import "FLLoadingView.h"
+...
+[ToastSupportFactory setCustomViewWithClassName:[FLLoadingView class]];
+```
+
+
+
+[详细使用方法说明](http://192.168.5.230/doc/rules/2017/06/21/Toast-使用说明/)
+

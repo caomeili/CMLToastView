@@ -1,0 +1,18 @@
+PODS:
+  - CMLToastView (1.0.0):
+    - CMLToastView/Core (= 1.0.0)
+  - CMLToastView/Core (1.0.0)
+
+DEPENDENCIES:
+  - CMLToastView (from `../`)
+
+EXTERNAL SOURCES:
+  CMLToastView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CMLToastView: 694da2c35864ad6e07d9a48bf45d04d1c362cfdb
+
+PODFILE CHECKSUM: 77608ac0da101cbe60937165c37c3683afc0f4cc
+
+COCOAPODS: 1.2.1

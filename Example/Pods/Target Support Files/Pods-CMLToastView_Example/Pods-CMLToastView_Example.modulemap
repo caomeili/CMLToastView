@@ -1,0 +1,6 @@
+framework module Pods_CMLToastView_Example {
+  umbrella header "Pods-CMLToastView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
